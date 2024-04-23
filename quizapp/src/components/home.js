@@ -15,9 +15,11 @@ function Home() {
               <li>
                 <h2>QuizHUB</h2>
               </li>
-              <li>
-                <a href="">Home</a>
-              </li>
+             
+             
+              <li> <a href="">Home</a> </li>
+               
+             
               <li>
                 <a href="">About</a>
               </li>
