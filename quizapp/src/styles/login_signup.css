@@ -1,0 +1,105 @@
+#body{
+    background-image: url("./img2.1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: whitesmoke;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 100vw;
+  
+}
+#container10{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    padding:2px;
+    position: relative;
+    
+}
+#container10 .box5{
+    background-color: #31457b76;;
+    position: relative;
+   padding: 25px;
+    border: 2px solid rgb(9, 82, 79);
+    border-radius: 8px;
+    width:auto;
+    height:auto;
+    box-shadow: 20px 20px 50px rgb(9, 82, 79);
+  
+    
+
+
+}
+.login1{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    }
+#email{
+    position:relative;
+     font-size: medium;
+     display: flex;
+     flex-direction: column;
+     justify-items: center;
+     align-items: center;
+     width: auto;
+     
+   }
+input{
+    height:2em;
+    width: 20em;
+    border-radius: 4px;
+    display: flex;
+   left: auto;
+   margin-top: 4px;
+   color: black;
+    
+   }
+   label{
+    height: 2em;
+
+    
+   }
+   #submit{
+    position: relative;
+    left: 35%;
+   align-items: center;
+    height:40px;
+    width: 80px;
+    padding: 0;
+    background-color: red;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+   }
+   
+   #button1{
+    position: relative;
+    top: -10px;
+    height:40px;
+    width: 80px;
+    padding: 0;
+    background-color: red;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+   }
+   
+   #forgot_pwd{
+    text-align: end;
+    position: relative;
+   margin: 15px 0px 5px 0px;
+    color: white;
+margin-top: 10px;
+margin-bottom: 10px;
+    
+    
+   }
+ 
+   
+    
+    
+    
+   
+
+

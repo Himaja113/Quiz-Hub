@@ -1,0 +1,162 @@
+
+:root{
+    --color: rgb(15, 15, 16);
+    --seccolor:rgb(171, 220, 214);
+}
+
+.body{
+   background-image: url('image3.png');
+   overflow: hidden;
+   
+
+   
+}
+*{
+    margin: 0;
+    padding: 0;
+    color: whitesmoke;
+}
+nav{
+    background-color: var(--color);
+}
+.nav{
+    display:flex;
+    justify-content:center;
+    word-break: 22em;
+    
+  
+}
+.nav li{
+    list-style: none;
+    padding:24px;
+    display: flex;
+    font-size: 20px;
+    
+    
+}
+.nav li a{
+    color: aliceblue;
+    text-decoration: none;
+  
+}
+.nav li h2{
+    padding-right: 25em;
+    font-weight:bolder;
+}
+header{
+    position: sticky;
+    top:0px;
+}
+main{
+margin: 5px;
+}
+
+.boxes{
+    
+    display:flex;
+    justify-content: space-around;
+    height:750px;
+   
+    font-size: 2em;
+    position: relative;
+}
+
+.box1{
+    
+    width:35vw;
+    height:45vh;
+    font-size: 2rem;
+
+}
+
+.box2{
+    
+    background-image: url("img2.1.jpg");
+    background-repeat: no-repeat;
+    background-position:left 35% bottom 45% ;
+    border: 2px solid rgb(9, 82, 79);
+    border-radius: 8px;
+    width:35vw;
+    height:45vh;
+    box-shadow: 0px 0px 20px rgb(9, 82, 79);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+
+}
+img{
+    
+    border: 2px solid black;
+    border-radius: 25px ;
+    margin-top: 5px;  
+}
+span{
+    
+    position: fixed;
+    right:0px;
+}
+h2{
+    
+    position: relative;
+    align-self: center;
+   
+}
+.Topics li{
+   display: block;
+   font-size: 16px;
+}
+
+.intro{
+font-size: 2rem;
+text-align: center;
+margin: 20px;
+
+}
+.login2{
+border-radius: 24px;
+background-color: rgba(255, 0, 0, 0.792);
+font-size: 30px;
+font-weight: 700;
+cursor: pointer;
+
+}
+.quizzes{
+border-top: 10px solid black;
+background-image: linear-gradient( to bottom,
+rgba(2, 38, 59, 0.648),
+rgba(3, 3, 3, 0.753)),url("Untitled design1.png");
+
+}
+.html,.css ,.js{
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 30px;
+font-size: 2rem;
+
+
+}
+.html1 ,.html2, .html3{
+flex: 1;
+text-align: center;
+list-style-type: none;
+
+}
+.css1, .css2 ,.css3{
+flex: 1;
+text-align: center;
+list-style-type: none;
+}
+.js1, .js2,.js3{
+flex: 1;
+text-align: center;
+list-style-type: none;
+}
+button{
+color: rgb(245, 242, 242);
+padding: 18px 24px ;
+border-radius: 18px;
+font-size: 2rem;
+background-color: rgba(234, 11, 11, 0.856);
+}

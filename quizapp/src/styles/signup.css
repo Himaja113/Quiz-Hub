@@ -1,0 +1,102 @@
+.body{
+    background-image: url("./img2.1.jpg");
+    background-size: cover;
+    width: 100vw;
+    color: whitesmoke;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.signup1{
+   
+    text-align: center;
+    padding: 2px 0px 7px 0px;
+    font-size: 1em;
+ 
+
+    
+}
+.box5{
+    background-color: #31457b76;;
+  
+    border: 2px solid rgb(9, 82, 79);
+    border-radius: 8px;
+    width:auto;
+    height:auto;
+    padding: 25px;
+    box-shadow: 20px 20px 50px rgb(9, 82, 79);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    
+    
+   
+
+
+}
+.signup{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    }
+.email{
+    position:relative;
+
+    top: 2%;
+     font-size: medium;
+     display: flex;
+     flex-direction: column;
+     justify-items: center;
+     align-items: center;
+     width: auto;
+     
+   }
+input{
+    height:2em;
+    width: 20em;
+    border-radius: 4px;
+    display: flex;
+   left: auto;
+   margin-top: 4px;
+    
+   }
+   label{
+    height: auto;
+    font-size:20px ;
+
+    
+   }
+   p{
+    font-size: 1rem;
+   }
+   
+   
+  
+   #submit{
+    position: relative;
+    left: 35%;
+   align-items: center;
+    height:40px;
+    width: 80px;
+    margin: 5px 0px 3px 0px;
+    padding: 0;
+    background-color: red;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+   }
+   
+   #button1{
+    position: relative;
+  
+    height:40px;
+    width: 80px;
+    margin: 10px 0px 5px 0px;
+    padding: 0;
+    background-color: red;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    
+   }
