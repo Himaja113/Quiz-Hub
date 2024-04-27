@@ -1,11 +1,12 @@
-
-:root{
-    --color: rgb(15, 15, 16);
-    --seccolor:rgb(171, 220, 214);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+
 .body{
-   background-image: url('image3.png');
+   background-image: url('img2.1.jpg');
    overflow: hidden;
    
 
@@ -17,7 +18,7 @@
     color: whitesmoke;
 }
 nav{
-    background-color: var(--color);
+    background-color: rgb(15, 15, 16);
 }
 .nav{
     display:flex;
@@ -121,42 +122,100 @@ font-weight: 700;
 cursor: pointer;
 
 }
-.quizzes{
-border-top: 10px solid black;
-background-image: linear-gradient( to bottom,
-rgba(2, 38, 59, 0.648),
-rgba(3, 3, 3, 0.753)),url("Untitled design1.png");
 
-}
-.html,.css ,.js{
-display: flex;
-justify-content: center;
-align-items: center;
-padding: 30px;
-font-size: 2rem;
+/* Media query for small screens (e.g., mobile devices) */
+@media (max-width: 767px) {
+    .body{
+        background-image: url('img2.1.jpg');
+        overflow: scroll;
+        overflow-x: hidden;
+        background-color: transparent;
+        background-size: contain;
+    }
+    .nav li {
+      font-size: 16px;
+      padding: 16px;
+    }
+  
+    .nav li h2 {
+      padding-right: 10px;
+    }
+  
+    .boxes {
 
-
-}
-.html1 ,.html2, .html3{
-flex: 1;
-text-align: center;
-list-style-type: none;
-
-}
-.css1, .css2 ,.css3{
-flex: 1;
-text-align: center;
-list-style-type: none;
-}
-.js1, .js2,.js3{
-flex: 1;
-text-align: center;
-list-style-type: none;
-}
-button{
-color: rgb(245, 242, 242);
-padding: 18px 24px ;
-border-radius: 18px;
-font-size: 2rem;
-background-color: rgba(234, 11, 11, 0.856);
-}
+      flex-direction: column-reverse;
+      height: auto;
+    justify-content: center;
+    
+    }
+  
+    .box1,
+    .box2 {
+      width: 70%;
+      height: 38vw;
+      font-size: 1.5rem;
+      align-self: center;
+    }
+  
+    .intro {
+      font-size: 1.5rem;
+      margin: 10px;
+    }
+  
+    img {
+      width: 40px;
+      height: 40px;
+    }
+  .box2{
+    background-size: cover;
+  }
+    .login2 {
+      font-size: 24px;
+    }
+  }
+  
+  /* Media query for medium screens (e.g., tablets) */
+  @media (min-width: 768px) and (max-width: 991px) {
+    .nav li {
+      font-size: 18px;
+      padding: 20px;
+    }
+    .body{
+        background-image: url('img2.1.jpg');
+        overflow: scroll;
+        overflow-x: hidden;
+        background-color: transparent;
+        background-size: contain;
+    }
+  
+    .nav li h2 {
+      padding-right: 15px;
+    }
+  
+    .boxes {
+      height: 600px;
+    }
+  
+    .box1,
+    .box2 {
+      width: 45%;
+      height: 50%;
+      font-size: 1.6rem;
+    }
+  
+    .intro {
+      font-size: 1.8rem;
+      margin: 15px;
+    }
+  
+    img {
+      /* width: 60px;
+      height: 80px; */
+      display: none;
+    }
+  
+    .login2 {
+      font-size: 26px;
+    }
+  }
+  /* Media query for small screens (e.g., mobile devices) */

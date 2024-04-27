@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { QuizData } from '../Data/QuizData';
 import QuizResult from './QuizResult';
-import shuffleArray from './shuffleArray'; // Assuming utils folder
+import shuffleArray from './shuffleArray'; 
 import '../styles/quiz.css';
 
 
@@ -9,21 +9,21 @@ function Quiz() {
   
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [score, setScore] = useState(0);
-  const [selectedOptions, setSelectedOptions] = useState([]); // Array for selections
+  const [selectedOptions, setSelectedOptions] = useState([]); 
   const [showResult, setShowResult] = useState(false);
-  const [shuffledQuestions, setShuffledQuestions] = useState(QuizData); // Shuffled data
+  const [shuffledQuestions, setShuffledQuestions] = useState(QuizData); 
 
   useEffect(() => {
-    if (!showResult) { // Shuffle questions only before showing result
-      setShuffledQuestions(shuffleArray(QuizData)); // Shuffle on component mount
+    if (!showResult) { 
+      setShuffledQuestions(shuffleArray(QuizData));
     }
-  }, [showResult]); // Re-run effect on showResult change
+  }, [showResult]); 
 
   const changeQuestion = (direction) => {
     updateScore();
     if (direction === 'next' && currentQuestion < shuffledQuestions.length - 1) {
       setCurrentQuestion(currentQuestion + 1);
-      setSelectedOptions([]); // Clear selections on next question
+      setSelectedOptions([]); 
     } else if (direction === 'previous' && currentQuestion > 0) {
       setCurrentQuestion(currentQuestion - 1);
     } else if (direction === 'submit') {
@@ -34,7 +34,7 @@ function Quiz() {
   const updateScore = () => {
     const { answer } = shuffledQuestions[currentQuestion];
 
-    if (Array.isArray(answer)) { // Check for multiple answer format
+    if (Array.isArray(answer)) { 
       const correctAnswers = selectedOptions.filter((option) => answer.includes(option));
       setScore(score + correctAnswers.length);
     } else if (selectedOptions.includes(answer)) {
@@ -47,7 +47,7 @@ function Quiz() {
     setCurrentQuestion(0);
     setSelectedOptions([]);
     setScore(0);
-    setShuffledQuestions(shuffleArray(QuizData)); // Re-shuffle on reset
+    setShuffledQuestions(shuffleArray(QuizData)); 
   };
 
   const isLastQuestion = currentQuestion === shuffledQuestions.length - 1;

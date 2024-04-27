@@ -2,12 +2,13 @@ import { Link } from "react-router-dom";
 import React from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 
-import "../styles/home.css";
+import "../styles/quizzes.css";
 
 function Quiz() {
     const location = useLocation();
 
     return(
+    
     <div class="quizzes">
             <div class="html">
               <div class="html1">
@@ -61,6 +62,7 @@ function Quiz() {
               </div>
             </div>
           </div>
+         
     );
 }
 

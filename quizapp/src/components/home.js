@@ -71,11 +71,7 @@ function Home() {
               </div>
             </div>
             <span>
-              <img
-                src="https://clipground.com/images/circle-clipart-logo-1.jpg"
-                alt=""
-                width="50px"
-              />
+             
             </span>
           </div>
           

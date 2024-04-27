@@ -1,177 +1,273 @@
 *{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+}
 body {
-    background: linear-gradient(to bottom, rgba(0,13,25,255), rgba(0,169,225,255));
-    min-height: 100vh; /* Set minimum height for full viewport */
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: Arial, sans-serif;
-    margin: 0;
-  }
+  background: linear-gradient(to bottom, rgba(0,13,25,255), rgba(0,169,225,255));
+  min-height: 100vh; /* Set minimum height for full viewport */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+/* Style the quiz card */
+.container {
+  display: flex;
+  align-items: center;
+  align-self: center;
+  flex-direction: column;
+  /* margin: 5px; */
+  overflow: hidden;
+  background: linear-gradient(to right, #d4c92d, #dfbaba);
+  border-radius: 10px; /* Rounded corners */
+  box-shadow:0px 0px 10px 1px #4e5c5c; /* Slight shadow effect */
+  /* padding: 20px; Inner padding for content */
+  text-align: center; /* Center text within card */
+  min-height: 400px;
+width: 700px; /* Set card width */
+
+}
+
+/* Style the question title and paragraph (centered, black text) */
+.heading-txt {
   
-  /* Style the quiz card */
-  .container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin-bottom: 5px;
-    overflow: hidden;
-    background: linear-gradient(to right, #d4c92d, #dfbaba);
-    border-radius: 10px; /* Rounded corners */
-    box-shadow:0px 0px 10px 1px #4e5c5c; /* Slight shadow effect */
-    padding: 20px; /* Inner padding for content */
-    text-align: center; /* Center text within card */
-    min-height: 400px;
-  width: 600px; /* Set card width */
+  font-size: 1.8rem;
+  font-weight: bold; /* Apply bold for both */
+  margin: 15px;
+  color: rgba(250, 245, 245, 0.93); /* Black text for both */
+  text-align: center;
+  text-transform: uppercase;
   position: relative;
-  }
  
-  /* Style the question title and paragraph (centered, black text) */
-  .heading-txt {
-    font-size: 1.8rem;
-    font-weight: bold; /* Apply bold for both */
-    margin-bottom: 15px;
-    color: rgba(250, 245, 245, 0.93); /* Black text for both */
-    text-align: center;
-    text-transform: uppercase;
-    position: relative;
-    top: -40px;
-  }
-  .question{
-    box-shadow:0px 0px 10px 1px #4e5c5c;
-    background: linear-gradient(to right, #dfbaba, #d4c92d);
-    margin-bottom: 12px;
-    border-radius: 5px;
-    padding:5px;
-    font-size: large;
-    font-weight: 600;
-    font-family: 'Times New Roman', Times, serif;
-    min-width: 600px;
-    min-height: 90px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  #question-txt{
-    position: relative;
-    left:-40%px;
-    color: black;
+}
+.question{
+  box-shadow:0px 0px 10px 1px #4e5c5c;
+  background: linear-gradient(to right, #dfbaba, #d4c92d);
+  margin-bottom: 12px;
+  border-radius: 5px;
+  padding:5px;
+  font-size: large;
+  font-weight: 600;
+  font-family: 'Times New Roman', Times, serif;
+  min-width: 700px;
+  min-height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#question-txt{
+  position: relative;
+  left:-40%px;
+  color: black;
 
-  } 
-  #question-number{
-    position: relative;
-    left:-40%px;
-    color: black;
+} 
+#question-number{
+  position: relative;
+  left:-40%px;
+  color: black;
 
-  } 
+} 
+
+
+/* Style the option buttons */
+.option-btn {
+  background-color: #1c1d1c; /* Green color for buttons */
+  border: none;
+  color: white; /* White text color */
+  padding: 12px 20px; /* Padding for buttons */
+  text-align: left; /* Align text to the left */
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 5px 0; /* Margin between buttons */
+  cursor: pointer;
+  border-radius: 5px; /* Rounded corners */
+  width: 90%; /* Make buttons full width */
 
   
-  /* Style the option buttons */
-  .option-btn {
-    background-color: #1c1d1c; /* Green color for buttons */
-    border: none;
-    color: white; /* White text color */
-    padding: 12px 20px; /* Padding for buttons */
-    text-align: left; /* Align text to the left */
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 5px 0; /* Margin between buttons */
-    cursor: pointer;
-    border-radius: 5px; /* Rounded corners */
-    width: 100%; /* Make buttons full width */
+}
+.checked{
+  background-color: rgb(179, 83, 179);
+  color:white;
+  box-shadow: 3px 3px 4px 1px rgb(78, 69, 78);
+}
 
+/* Add hover effect for buttons */
+.option-btn:hover {
+  background-color: #3e8e41; /* Darker green on hover */
+}
+#previous-button {
+  background-color: #4CAF50; /* Green color */
+  border: none;
+  color: white; /* White text color */
+  padding: 15px 30px; /* Increased padding for larger button */
+  text-align: center;
+  text-decoration: none;
+  display: block; /* Display as block for centering */
+  font-size: 20px; /* Increased font size */
+  margin: 15px auto; /* Add margin for centering */
+  cursor: pointer;
+  border-radius: 5px; /* Rounded corners */
+  height: auto;
+}
+
+/* Add hover effect for next button */
+#previous-button:hover {
+  background-color: #3e8e41; /* Darker green on hover */
+} 
+#previous-button:active{
+  box-shadow:none;    
+}
+.button-container{
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  justify-content: center;
+
+}
+/* Style the next button (increased size, centered) */
+#next-button {
+  background-color: #4CAF50; /* Green color */
+  border: none;
+  color: white; /* White text color */
+  padding: 15px 30px; /* Increased padding for larger button */
+  text-align: center;
+  text-decoration: none;
+  display: block; /* Display as block for centering */
+  font-size: 20px; /* Increased font size */
+  margin: 15px auto; /* Add margin for centering */
+  cursor: pointer;
+  border-radius: 5px;
+  height: auto;
+}
+
+/* Add hover effect for next button */
+#next-button:hover {
+  background-color: #3e8e41; /* Darker green on hover */
+}
+#next-button:active{
+  box-shadow:none;    
+}
+#submit-button{
+  background-color: #4CAF50; /* Green color */
+  border: none;
+  color: white; /* White text color */
+  padding: 15px 30px; /* Increased padding for larger button */
+  text-align: center;
+  text-decoration: none;
+  display: block; /* Display as block for centering */
+  font-size: 20px; /* Increased font size */
+  margin: 15px auto; /* Add margin for centering */
+  cursor: pointer;
+  border-radius: 5px;
+}
+#submit-button:hover {
+  background-color: #3e8e41; /* Darker green on hover */
+}
+#submit-button:active{
+  box-shadow:none;    
+}
+.show-score{
+  position: absolute;
+  top:30%;
+  font-size: 40px;
+  text-align: center;  
+}
+@media (max-width: 767px) {
+
+  body{
+    width: 100vw;
+    height: 100vh;
+overflow: scroll;
+overflow-x: hidden;
+background-color: transparent;
+    
+  
+  }
+  .container {
+    min-width: 100%;
+    min-height: 300px;
+   align-self: center;
+   align-content: center;
+   align-items: center;
+  
+  }
+
+  .heading-txt {
+    font-size: 1rem;
+   
     
   }
-  .checked{
-    background-color: rgb(179, 83, 179);
-    color:white;
-    box-shadow: 3px 3px 4px 1px rgb(78, 69, 78);
-  }
-  
-  /* Add hover effect for buttons */
-  .option-btn:hover {
-    background-color: #3e8e41; /* Darker green on hover */
-  }
-  #previous-button {
-    background-color: #4CAF50; /* Green color */
-    border: none;
-    color: white; /* White text color */
-    padding: 15px 30px; /* Increased padding for larger button */
-    text-align: center;
-    text-decoration: none;
-    display: block; /* Display as block for centering */
-    font-size: 20px; /* Increased font size */
-    margin: 15px auto; /* Add margin for centering */
-    cursor: pointer;
-    border-radius: 5px; /* Rounded corners */
+  .option-btn{
+    width: 85%;
     height: auto;
   }
-  
-  /* Add hover effect for next button */
-  #previous-button:hover {
-    background-color: #3e8e41; /* Darker green on hover */
-  } 
-  #previous-button:active{
-    box-shadow:none;    
+
+  .question {
+    min-width: 90%;
+    min-height: 70px;
+    font-size: 0.9rem;
+    
   }
   .button-container{
     display: flex;
-    flex-direction: row;
-    gap: 25px;
-    justify-content: center;
+    flex-direction: column;
+    row-gap: 0px;
+   }
 
+  #next-button{
+    padding: 15px;
+    
   }
-  /* Style the next button (increased size, centered) */
-  #next-button {
-    background-color: #4CAF50; /* Green color */
-    border: none;
-    color: white; /* White text color */
-    padding: 15px 30px; /* Increased padding for larger button */
-    text-align: center;
-    text-decoration: none;
-    display: block; /* Display as block for centering */
-    font-size: 20px; /* Increased font size */
-    margin: 15px auto; /* Add margin for centering */
-    cursor: pointer;
-    border-radius: 5px;
-    height: auto;
+
+  #previous-button,
+  #next-button,
+  #submit-button {
+   
+    font-size: 0.9rem;
+    max-width: 45%;
+    
   }
-  
-  /* Add hover effect for next button */
-  #next-button:hover {
-    background-color: #3e8e41; /* Darker green on hover */
+
+  .show-score {
+    font-size: 30px;
   }
-  #next-button:active{
-    box-shadow:none;    
+}
+
+/* Tablet Styles (768px to 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+
+  .container {
+    min-width: 90%;
+    min-height: 450px;
+   
   }
-  #submit-button{
-    background-color: #4CAF50; /* Green color */
-    border: none;
-    color: white; /* White text color */
-    padding: 15px 30px; /* Increased padding for larger button */
-    text-align: center;
-    text-decoration: none;
-    display: block; /* Display as block for centering */
-    font-size: 20px; /* Increased font size */
-    margin: 15px auto; /* Add margin for centering */
-    cursor: pointer;
-    border-radius: 5px;
+
+  .heading-txt {
+    font-size: 1.7rem;
+    margin: 12px;
   }
-  #submit-button:hover {
-    background-color: #3e8e41; /* Darker green on hover */
+
+  .question {
+    min-width: 100%;
+    min-height: 80px;
+    font-size: 1.1rem;
   }
-  #submit-button:active{
-    box-shadow:none;    
+
+
+  #previous-button,
+  #next-button,
+  #submit-button {
+    
+    font-size: 1.5rem;
+    min-width: 45%;
+    
   }
-  .show-score{
-    position: absolute;
-    top:30%;
-    font-size: 40px;
-    text-align: center;  
+
+  .show-score {
+    font-size: 35px;
   }
+}
